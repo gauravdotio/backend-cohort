@@ -6,7 +6,7 @@ export default function FacialExpression() {
 
     const loadModels = async () => {
         const MODEL_URL = '/models';
-        await faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL);
+        await faceapi.nets.tinyFaceDettector.loadFromUri(MODEL_URL);
         await faceapi.nets.faceExpressionNet.loadFromUri(MODEL_URL);
     };
 
